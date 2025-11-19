@@ -1,0 +1,68 @@
+# Android / Gradle
+.gradle/
+build/
+**/build/
+
+# Local configuration file (SDK path)
+local.properties
+/local.properties
+
+# Gradle wrapper caches
+/.gradle/
+
+# Module specific
+*.iml
+*.hprof
+
+# IntelliJ / Android Studio
+/.idea/
+/.idea/*
+!.idea/gradle.xml
+!.idea/inspectionProfiles
+*.iws
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+
+# Keystore files (do not commit your release keystore)
+*.jks
+*.keystore
+keystore.properties
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NDK
+externalNativeBuild/
+.cxx/
+
+# Captures and outputs
+captures/
+*.log
+
+# Crashlytics / Fabric / generated files
+crashlytics.properties
+fabric.properties
+
+# Misc
+.gradle/
+.gradle-cache/
+!gradle-wrapper.jar
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment / secrets
+.env
+.env.*
+secrets.properties
+local_env.properties
+
+# IDE specific
+.vscode/
+
+# Jetifier caches / other
+androidx-*.jar
