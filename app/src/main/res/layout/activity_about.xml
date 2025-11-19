@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- App Info Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="25dp"
+                android:background="#F5F5F5"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🌤️"
+                    android:textSize="80sp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weather App"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Version 1.0.0"
+                    android:textSize="16sp"
+                    android:textColor="#757575"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A modern weather application that provides real-time weather information for cities around the world."
+                    android:textSize="14sp"
+                    android:textColor="#424242"
+                    android:textAlignment="center"
+                    android:lineSpacingExtra="4dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Features Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#F5F5F5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Features"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✓ Real-time weather data\n✓ Search history tracking\n✓ Favorite cities management\n✓ Multiple temperature units\n✓ Dark mode support\n✓ Clean and modern UI"
+                    android:textSize="14sp"
+                    android:textColor="#424242"
+                    android:lineSpacingExtra="6dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Developer Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:background="#F5F5F5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Powered By"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="OpenWeatherMap API"
+                    android:textSize="16sp"
+                    android:textColor="#424242"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weather data provided by OpenWeatherMap"
+                    android:textSize="12sp"
+                    android:textColor="#757575"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/websiteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Visit OpenWeatherMap"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gradient"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/githubBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="View on GitHub"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gradient"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Back"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_gradient"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2024 Weather App. All rights reserved."
+            android:textSize="12sp"
+            android:textColor="#E0E0E0"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>
